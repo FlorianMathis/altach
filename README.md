@@ -19,7 +19,8 @@ at work! (no time right now :/)
 
 <h3> Contribution </h3>
 <ul>
-  <li>A big thank you goes out to <b>bundesliga.at</b> for supporting this project! :soccer: </li>
+  <li>A big thank you goes out to <a href="https://bundesliga.at">bundesliga.at</a> for supporting this project! :soccer: </li>
+  <li>Thanks to <a href="https://austriansoccerboard.com">Altach ASB Community</a> for their input! :raised_hands:</li>
   </ul>
 
 
