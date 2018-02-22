@@ -14,7 +14,7 @@ Aufgrund von Feedback der SCRA Fan-Community aus dem ASB (https://www.austrianso
 Thanks for :bar_chart: 100+ downloads! :heart:
 
 <h2>Ionic Version :iphone: :</h2>
-at work! (no time right now :/)
+*UPDATE 01.03.2018* - new version at work! 
 
 
 <h3> Contribution </h3>
