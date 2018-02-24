@@ -1,46 +1,13 @@
 <ion-view title="SCRA.AT" id="page7">
-  <ion-content padding="true" class="has-header"></ion-content>
-
-</ion-view>
-
-<script type="text/javascript">
-	 // var x2js = new X2JS();
-<!--
-(function() {
-    var app = angular.module('app', []);
-	app.config(['$httpProvider', function($httpProvider) {
-        $httpProvider.defaults.useXDomain = true;
-        delete $httpProvider.defaults.headers.common['X-Requested-With'];
-    }
-]);
-    app.controller('Controller', ['$scope', '$http', '$window', function($scope, $http, $window) {
-        $scope.xml = '';
-        $http({
-            method  : 'GET',
-			dataType: 'xml',
-            url     : 'https://cors-anywhere.herokuapp.com/https://newsroom.scra.at/de/scra/all/rss.xml',  //https://cors-anywhere.herokuapp.com/
-            timeout : 10000,
-            params  : {},  // Query Parameters (GET)
-            transformResponse : function(data) {
-                // string -> XML document object
-                return $.parseXML(data);
-            }
-        }).success(function(data, status, headers, config) {
-            console.dir(data);  // XML document object
-			//var jsonObj = x2js.xml2json(data); // Convert XML to JSON
-            console.log(jsonObj);
-			//$scope.xml = JSON.stringify(jsonObj);
-				//alert(jsonObj["rss"]);
-			console.dir(data.documentElement.innerHTML); 
-			$value = data.documentElement.innerHTML.rss.channel.item;
-			$scope.xml = $value;
-
-        }).error(function(data, status, headers, config) {
-            $window.alert(status);
-			console.dir("error");
-        });
-    }]);
-})();
-//-->
-</script>
-
+    <ion-content padding="true" class="has-header">
+       <!-- our list and list items -->
+       <ion-list>
+         <ion-item ng-repeat="content in items" ng-click="goto(content.link)">
+           <b>{{content.title}}</b>
+         </br>
+         {{content.description}}
+                </ion-item>
+       </ion-list>
+    <!-- <a href-inappbrowser="www.google.at" id="news-button1" class="button button-positive button-block">Tap me!</a> -->
+    </ion-content>
+  </ion-view>
