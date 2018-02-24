@@ -54,12 +54,15 @@ function ($scope, $stateParams, $http, $ionicLoading) {
     method: 'GET',
     url: 'https://cors-anywhere.herokuapp.com/https://newsroom.scra.at/de/scra/all/rss.xml'
   }).then(function successCallback(response) {
-    $scope.hide();
       // this callback will be called asynchronously
       // when the response is available
-      console.log("got a response");
+      $scope.hide();
+      //own parser yay!
+      /*
+      should use x = getElementsByTagName("Name")[0];
+      x.childNodes[0];
+      */
       var parser = new DOMParser();
-      //console.log(typeof parser.parseFromString(response.data, "application/xml"));
       var newsxml = parser.parseFromString(response.data, "application/xml");
       var position = response.data.indexOf("<item>");
       var cleanedstring = response.data.substring(position);
@@ -76,13 +79,9 @@ function ($scope, $stateParams, $http, $ionicLoading) {
         */
         var parser = new DOMParser;
         var title = item.substring(item.indexOf("<title>")+7,item.indexOf("</title>"));
-        var dom = parser.parseFromString(
-    '<!doctype html><body>' + title,
-    'text/html');
-       title = dom.body.textContent;
+        var dom = parser.parseFromString('<!doctype html><body>' + title,'text/html');
+        title = dom.body.textContent;
         var link = item.substring(item.indexOf("<link>")+6,item.indexOf("</link>"));
-
-
         var description = item.substring(item.indexOf("<description>")+13,item.indexOf("</description>")+14);
         description = description.substring(description.indexOf("CDATA[")+6,description.indexOf("]]>"));
         cleanedstring = cleanedstring.slice(end,cleanedstring.length-1);
@@ -95,10 +94,6 @@ function ($scope, $stateParams, $http, $ionicLoading) {
       }
 
       console.log($scope.items);
-      //console.log(response.data);
-      //var data = xmlToJson(response.data);
-      //console.log(data);
-    //  console.log(response.data);
     $scope.goto = function(link){
       document.location.href = link;
       console.log(link);
@@ -107,7 +102,6 @@ function ($scope, $stateParams, $http, $ionicLoading) {
       // called asynchronously if an error occurs
       // or server returns response with an error status.
       console.log("no response");
-
     });
 
 
