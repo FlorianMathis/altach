@@ -7,7 +7,6 @@ angular.module('app.routes', [])
   // Set up the various states which the app can be in.
   // Each state's controller can be found in controllers.js
   $stateProvider
-    
 
       .state('tabsController.aSB', {
     url: '/page3',
@@ -65,6 +64,16 @@ angular.module('app.routes', [])
       'tab1': {
         templateUrl: 'templates/news.html',
         controller: 'newsCtrl'
+      }
+    }
+  })
+
+  .state('tabsController.spieltag', {
+    url: '/page8',
+    views: {
+      'tab8': {
+        templateUrl: 'templates/spieltag.html',
+        controller: 'spieltagCtrl'
       }
     }
   })

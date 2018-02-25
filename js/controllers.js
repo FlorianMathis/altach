@@ -65,7 +65,9 @@ function ($scope, $stateParams, $http, $ionicLoading) {
     should use x = getElementsByTagName("Name")[0];
     x.childNodes[0];
     */
-    var parser = new DOMParser();
+
+    var parser = new DOMParser;
+  //console.log(response.data);
     var newsxml = parser.parseFromString(response.data, "application/xml");
     var position = response.data.indexOf("<item>");
     var cleanedstring = response.data.substring(position);
@@ -80,7 +82,6 @@ function ($scope, $stateParams, $http, $ionicLoading) {
       array2 -> link
       array3 -> description
       */
-      var parser = new DOMParser;
       var title = item.substring(item.indexOf("<title>")+7,item.indexOf("</title>"));
       var dom = parser.parseFromString('<!doctype html><body>' + title,'text/html');
       title = dom.body.textContent;
@@ -95,7 +96,6 @@ function ($scope, $stateParams, $http, $ionicLoading) {
         'description': description,
       };
     }
-
     console.log($scope.items);
     $scope.goto = function(link){
       document.location.href = link;
@@ -106,8 +106,6 @@ function ($scope, $stateParams, $http, $ionicLoading) {
     // or server returns response with an error status.
     console.log("no response");
   });
-
-
 }
 $scope.fetchscra();
 
@@ -171,6 +169,67 @@ $scope.doRefresh =function(){
 
 }
 $scope.doRefresh();
+
+}])
+
+.controller('spieltagCtrl', ['$scope', '$stateParams','$http','$ionicLoading', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+// You can include any angular dependencies as parameters for this function
+// TIP: Access Route Parameters for your page via $stateParams.parameterName
+function ($scope, $stateParams, $http, $ionicLoading) {
+  var parser = new DOMParser();
+  $scope.spieltag = {};
+  $scope.spieltagnr = "";
+  $scope.fetchspieltag =function(){
+  $scope.show = function() {
+    $ionicLoading.show({
+      template: 'Loading...'
+    }).then(function(){
+      console.log("The loading indicator is now displayed");
+    });
+  };
+  $scope.hide = function(){
+    $ionicLoading.hide().then(function(){
+      console.log("The loading indicator is now hidden");
+    });
+  };
+  $scope.show();
+  $http({
+    method: 'GET',
+    url: 'https://cors-anywhere.herokuapp.com/http://rss.kicker.de/live/tmobilebundesliga'
+  }).then(function successCallback(response) {
+    // this callback will be called asynchronously
+    // when the response is available
+    $scope.hide();
+    $scope.$broadcast('scroll.refreshComplete');
+    var spieltagxml = parser.parseFromString(response.data, "application/xml");
+    console.log(spieltagxml);
+    var x = spieltagxml.getElementsByTagName("item");
+    spieltagnr = spieltagxml.getElementsByTagName("category").innerHTML;
+    var arr = [].slice.call(x);
+    console.log(arr);
+    arr.forEach(function(element, i){
+      var title = element.childNodes[1];
+      var link = element.childNodes[3];
+      var description = element.childNodes[5];
+      $scope.spieltag[i] = {
+        'title': title.innerHTML,
+        'link': link.innerHTML,
+        'description': description.innerHTML.replace("<![CDATA[","").replace("]]>",""),
+      };
+    });
+    console.log($scope.spieltag);
+
+  }, function errorCallback(response) {
+    // called asynchronously if an error occurs
+    // or server returns response with an error status.
+    console.log("no response");
+  });
+  $scope.goto = function(link){
+    document.location.href = link;
+    console.log(link);
+  }
+}
+$scope.fetchspieltag();
 
 }])
 

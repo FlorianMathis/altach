@@ -1,0 +1,53 @@
+<head>
+
+ <title></title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+
+<style type="text/css">
+
+ iframe[id^='twitter-widget-0'] {
+
+ height:600px !important;
+
+ margin-bottom:10px !important;
+
+ width:100% !important; 
+
+}
+
+</style>
+
+<script type="text/javascript">
+
+ $(window).on('load', function () {
+
+ $('iframe[id^=twitter-widget-]').each(function () {
+
+ var head = $(this).contents().find('head');
+
+ if (head.length) {
+
+ head.append('<style>.timeline { max-width: 100% !important; width: 100% !important; } .timeline .stream { max-width: none !important; width: 100% !important; }</style>');
+
+ }
+
+ $('#twitter-widget-0').append($('<div class=timeline>'));
+
+ })
+
+ });
+
+</script>
+
+</head>
+
+<body>
+
+ <a style="max-width:100%; width:100%;" class="twitter-timeline" href="https://twitter.com/search?q=from%3A%40SCRAltach%20OR%20%23scraltach%20OR%20%23SCRAltach%20OR%20%40SCRAltach" data-widget-id="967895869155573760">Tweets über from:@SCRAltach OR #scraltach OR #SCRAltach OR @SCRAltach </a>
+           
+
+</body>
+
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          

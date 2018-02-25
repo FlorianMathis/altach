@@ -8,13 +8,12 @@
       on-refresh="doRefresh()">
    </ion-refresher>
      <ion-list>
-       <ion-item ng-repeat="content in googlenews" ng-click="goto(content.link)">
+       <ion-item class="item-text-wrap" ng-repeat="content in googlenews" ng-click="goto(content.link)">
          <b>{{content.title}}</b>
        </br>
-       <i>Quelle: {{content.source}}</i>
+       <p align="right" style="font-size:70%;">Quelle: {{content.source}}</p>
               </ion-item>
      </ion-list>
 <!--<a href-inappbrowser="www.google.at" id="news-button1" class="button button-positive button-block">Tap me!</a> -->
-
   </ion-content>
 </ion-view>
