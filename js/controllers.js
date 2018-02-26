@@ -132,7 +132,7 @@ $scope.doRefresh =function(){
   $scope.show();
   $http({
     method: 'GET',
-    url: 'https://cors-anywhere.herokuapp.com/https://news.google.com/news/rss/search/section/q/scr%20altach%20OR%20altach/scr%20altach%20OR%20altach?hl=en&gl=US&ned=us%3Foutput%3Drss&tbm=nws&source=lnt&tbs=sbd:1"'
+    url: 'https://cors-anywhere.herokuapp.com/https://news.google.com/news/rss/search/section/q/scr%20altach%20OR%20altach%20OR%20Tipico%20Bundesliga%20/scr%20altach%20OR%20altach%20OR%20Tipico%20Bundesliga%20?hl=en&gl=US&ned=us%3Foutput%3Drss&tbm=nws&source=lnt&tbs=sbd:1"'
   }).then(function successCallback(response) {
     // this callback will be called asynchronously
     // when the response is available
@@ -202,9 +202,10 @@ function ($scope, $stateParams, $http, $ionicLoading) {
     $scope.hide();
     $scope.$broadcast('scroll.refreshComplete');
     var spieltagxml = parser.parseFromString(response.data, "application/xml");
-    console.log(spieltagxml);
+    var tipico_bundesliga = spieltagxml.getElementsByTagName("category");
+    $scope.nrspieltag = tipico_bundesliga[0].innerHTML;
+    console.log($scope.nrspieltag);
     var x = spieltagxml.getElementsByTagName("item");
-    spieltagnr = spieltagxml.getElementsByTagName("category").innerHTML;
     var arr = [].slice.call(x);
     console.log(arr);
     arr.forEach(function(element, i){
@@ -238,7 +239,7 @@ $scope.fetchspieltag();
 // You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $stateParams) {
-
+ionic.Platform.fullScreen();
 
 }])
 

@@ -1,12 +1,18 @@
 <ion-view  id="page9">
   <ion-nav-title>
-    <span style="color:#ffd600">SC RHEINDORF ALTACH</span>
+    <span>SC RHEINDORF ALTACH</span>
   </ion-nav-title>
     <ion-content padding="true" class="has-header">
        <!-- our list and list items -->
        <ion-refresher
         on-refresh="fetchspieltag()">
      </ion-refresher>
+     <div class="card">
+  <div class="item item-text-wrap">
+<p style="text-align: center">{{nrspieltag}}  </p>
+</div>
+
+</div>
 
        <ion-list>
          <ion-item class="item-text-wrap" ng-repeat="content in spieltag" ng-click="goto(content.link)">
