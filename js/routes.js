@@ -78,11 +78,23 @@ angular.module('app.routes', [])
     }
   })
 
+  .state('tabsController.about', {
+    url: '/page9',
+    views: {
+      'tab9': {
+        templateUrl: 'templates/about.html',
+        controller: 'aboutCtrl'
+      }
+    }
+  })
+
   .state('tabsController', {
     url: '/page1',
     templateUrl: 'templates/tabsController.html',
     abstract:true
   })
+
+
 
 $urlRouterProvider.otherwise('/page1/page2')
 
