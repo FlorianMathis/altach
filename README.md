@@ -5,7 +5,7 @@ Die <b>SCRA Fan News - App</b> ist in erster Linie für Sportclub Rheindorf Alta
 
 Die zur Verfügung gestellte App wurde von den Fans für die Fans entwickelt und steht in keinem direkten Kontakt mit dem Sportclub Rheindorf Altach.
 
-Aufgrund von Feedback der SCRA Fan-Community aus dem ASB (https://www.austriansoccerboard.at/topic/111600-scr-altach-news-app/) wird die App laufend (sofern zeitlich möglich) weiterentwickelt.
+Auf Basis von Feedback der SCRA Fan-Community aus dem ASB (https://www.austriansoccerboard.at/topic/111600-scr-altach-news-app/) wird die App laufend (sofern zeitlich möglich) weiterentwickelt.
 
 <h2>Android Version:<h2>
 <a href="https://play.google.com/store/apps/details?id=com.floma.scranews&hl=dep">
