@@ -13,12 +13,12 @@ Auf Basis von Feedback der SCRA Fan-Community aus dem ASB (https://www.austrians
 </a>
 Thanks for :bar_chart: 100+ downloads! :heart:
 
-<h2>Ionic Version :iphone: :</h2>
+<h2>Ionic (v1) Version :iphone: :</h2>
 <a href="http://fanprojektscra.bplaced.net/altach/&hl=dep">
   <img src="https://i0.wp.com/b-alidra.com/wp-content/uploads/2015/12/ionic-sdk-logo-landscape-transparent-e1450787227359.png?fit=1000%2C355&ssl=1" width="200px" height="75px" alt="playstore">
 </a>
 
-
+The code is a mess! :runner:  :smiley:
 
 <h3> Contribution </h3>
 <ul>
