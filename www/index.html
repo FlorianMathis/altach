@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="viewport-fit=cover, initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Von Fans, für Fans.</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/apple-touch-icon.png">
+	<link rel="apple-touch-startup-image" sizes="180x180" href="resources/icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/favicon-16x16.png">
+    <link rel="mask-icon" href="resources/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="manifest.json">
+
+      <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+
+    <style type="text/css">
+      .platform-ios .manual-ios-statusbar-padding{
+        padding-top:20px;
+      }
+      .manual-remove-top-padding{
+        padding-top:0px;
+      }
+      .manual-remove-top-padding .scroll{
+        padding-top:0px !important;
+      }
+      ion-list.manual-list-fullwidth div.list, .list.card.manual-card-fullwidth {
+        margin-left:-10px;
+        margin-right:-10px;
+      }
+      ion-list.manual-list-fullwidth div.list > .item, .list.card.manual-card-fullwidth > .item {
+        border-radius:0px;
+        border-left:0px;
+        border-right: 0px;
+      }
+      .show-list-numbers-and-dots ul{
+        list-style-type: disc;
+        padding-left:40px;
+      }
+      .show-list-numbers-and-dots ol{
+        list-style-type: decimal;
+        padding-left:40px;
+      }
+    </style>
+
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/routes.js"></script>
+
+    <script src="js/directives.js"></script>
+    <script src="js/services.js"></script>
+
+    <!-- Only required for Tab projects w/ pages in multiple tabs
+    <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
+    -->
+
+  </head>
+  <body ng-app="app" animation="slide-left-right-ios7">
+  <div>
+  <ion-side-menus enable-menu-with-back-views="false" data-componentid="side-menu21">
+    <ion-side-menu-content>
+      <ion-nav-bar class="bar-stable">
+        <ion-nav-back-button></ion-nav-back-button>
+        <ion-nav-buttons side="left">
+          <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+        </ion-nav-buttons>
+      </ion-nav-bar>
+      <ion-nav-view></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left" id="side-menu21">
+      <ion-header-bar class="bar-stable">
+        <div class="title">Menü</div>
+      </ion-header-bar>
+      <ion-content ng-controller="menuCtrl" padding="false" class="side-menu-left has-header ">
+        <ion-list id="menu-list2" data-componentid="list2">
+          <ion-item id="menu-list-item10" ui-sref="tabsController.news()" menu-close="" data-componentid="list-item10">News</ion-item>
+          <ion-item id="menu-list-item11" ui-sref="tabsController.sCRAAT()" menu-close="" data-componentid="list-item11">SCRA.AT</ion-item>
+          <ion-item id="menu-list-item12" ui-sref="tabsController.twitter()" menu-close="" data-componentid="list-item12">Twitter</ion-item>
+          <ion-item id="menu-list-item16" ui-sref="tabsController.spieltag()" menu-close="" data-componentid="list-item16">Spieltag</ion-item>
+          <ion-item id="menu-list-item13" ui-sref="tabsController.tabelle()" menu-close="" data-componentid="list-item13">Tabelle</ion-item>
+          <ion-item id="menu-list-item14" ui-sref="tabsController.ticker()" menu-close="" data-componentid="list-item14">Liveticker</ion-item>
+          <ion-item id="menu-list-item15" ui-sref="tabsController.aSB()" menu-close="" data-componentid="list-item15">ASB - Forum</ion-item>
+          <ion-item id="menu-list-item17" ui-sref="tabsController.about()" menu-close="" data-componentid="list-item17">Das Projekt</ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-side-menu>
+  </ion-side-menus>
+</div>
+  </body>
+</html>

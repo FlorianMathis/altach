@@ -1,11 +1,11 @@
-ï»¿Die <b>SCRA Fan News - App</b> ist in erster Linie fÃ¼r Sportclub Rheindorf Altach Fans gedacht. Sie liefert Neuigkeiten Ã¼ber den Verein oder Spieler des Vereins, und listet die aktuellsten Neuigkeiten von der offiziellen Vereinsseite auf. ZusÃ¤tzlich sind Informationen wie beispielsweise die AnstoÃŸzeiten des nÃ¤chsten Spieltags inkl. Liveticker der Begegnungen (von laola1.at) und die aktuelle Tabelle der Bundesliga (von bundesliga.at) abrufbar.
+?Die <b>SCRA Fan News - App</b> ist in erster Linie für Sportclub Rheindorf Altach Fans gedacht. Sie liefert Neuigkeiten über den Verein oder Spieler des Vereins, und listet die aktuellsten Neuigkeiten von der offiziellen Vereinsseite auf. Zusätzlich sind Informationen wie beispielsweise die Anstoßzeiten des nächsten Spieltags inkl. Liveticker der Begegnungen (von laola1.at) und die aktuelle Tabelle der Bundesliga (von bundesliga.at) abrufbar.
 
 <img src="https://www.austriansoccerboard.at/uploads/monthly_2017_10/1.thumb.png.87f6a4d3724c12b322e202a777179845.png" width ="248px" height= auto  align="middle" alt="playstore">
 
 
-Die zur VerfÃ¼gung gestellte App wurde von den Fans fÃ¼r die Fans entwickelt und steht in keinem direkten Kontakt mit dem Sportclub Rheindorf Altach.
+Die zur Verfügung gestellte App wurde von den Fans für die Fans entwickelt und steht in keinem direkten Kontakt mit dem Sportclub Rheindorf Altach.
 
-Auf Basis von Feedback der SCRA Fan-Community aus dem ASB (https://www.austriansoccerboard.at/topic/111600-scr-altach-news-app/) wird die App laufend (sofern zeitlich mÃ¶glich) weiterentwickelt.
+Auf Basis von Feedback der SCRA Fan-Community aus dem ASB (https://www.austriansoccerboard.at/topic/111600-scr-altach-news-app/) wird die App laufend (sofern zeitlich möglich) weiterentwickelt.
 
 <h2>Android Version:<h2>
 <a href="https://play.google.com/store/apps/details?id=com.floma.scranews&hl=dep">
@@ -14,7 +14,7 @@ Auf Basis von Feedback der SCRA Fan-Community aus dem ASB (https://www.austrians
 Thanks for :bar_chart: 100+ downloads! :heart:
 
 <h2>Ionic (v1) Version :iphone: :</h2>
-<a href="http://fanprojektscra.bplaced.net/altach/&hl=dep">
+<a href="http://fanprojektscra.bplaced.net/altach/www/&hl=dep">
   <img src="https://i0.wp.com/b-alidra.com/wp-content/uploads/2015/12/ionic-sdk-logo-landscape-transparent-e1450787227359.png?fit=1000%2C355&ssl=1" width="200px" height="75px" alt="playstore">
 </a>
 
