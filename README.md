@@ -8,14 +8,14 @@ Die zur Verfügung gestellte App wurde von den Fans für die Fans entwickelt und
 Auf Basis von Feedback der SCRA Fan-Community aus dem ASB (https://www.austriansoccerboard.at/topic/111600-scr-altach-news-app/) wird die App laufend (sofern zeitlich möglich) weiterentwickelt.
 
 
-<h2>Ionic (v1) Version :android: and :iphone: :</h2>
+<h2>Ionic (v1) Version for Android and iPhone :iPhone:</h2>
 <a href="http://fanprojektscra.bplaced.net/altach/www/&hl=dep">
   <img src="https://i0.wp.com/b-alidra.com/wp-content/uploads/2015/12/ionic-sdk-logo-landscape-transparent-e1450787227359.png?fit=1000%2C355&ssl=1" width="200px" height="75px" alt="playstore">
 </a>
 
 The code is a mess! :runner:  :smiley:
 
-<h2>Android Version (Playstore) - deprecated, please use the Progressive Web App above:<h2>
+<h2>Android Version (Playstore) - deprecated, please use the Progressive Web App above<h2>
 <a href="https://play.google.com/store/apps/details?id=com.floma.scranews&hl=dep">
   <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width="200px" height="75px" alt="playstore">
 </a>
