@@ -8,7 +8,7 @@ Die zur Verfügung gestellte App wurde von den Fans für die Fans entwickelt und
 Auf Basis von Feedback der SCRA Fan-Community aus dem ASB (https://www.austriansoccerboard.at/topic/111600-scr-altach-news-app/) wird die App laufend (sofern zeitlich möglich) weiterentwickelt.
 
 
-<h2>Ionic (v1) Version for Android and iPhone :iPhone:</h2>
+<h2>Ionic (v1) Version for Android and iPhone :iphone:</h2>
 <a href="http://fanprojektscra.bplaced.net/altach/www/&hl=dep">
   <img src="https://i0.wp.com/b-alidra.com/wp-content/uploads/2015/12/ionic-sdk-logo-landscape-transparent-e1450787227359.png?fit=1000%2C355&ssl=1" width="200px" height="75px" alt="playstore">
 </a>
